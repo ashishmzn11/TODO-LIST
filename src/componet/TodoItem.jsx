@@ -1,10 +1,10 @@
-function TodoItem({todoName,duedate}) {
+function TodoItem({todoName,duedate,handledelet}) {
   return (
-    <div class="container  as-contener">
-      <div class="row">
-        <div class="col-6">{todoName}</div>
-        <div class="col-4">{duedate}</div>
-        <div class="col-2"><button type="button" class="btn btn-danger as-botton">Delete</button></div>
+    <div className="container  as-contener">
+      <div className="row">
+        <div className="col-6">{todoName}</div>
+        <div className="col-4">{duedate}</div>
+        <div className="col-2"><button type="button" class="btn btn-danger as-botton" onClick={()=>handledelet(todoName)}>Delete</button></div>
       </div>
     </div>
   );
